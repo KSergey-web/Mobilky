@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="text_button_sum">Суммировать</string>
+    <string name="text_for_num1">Число 1</string>
+    <string name="text_for_num2">Число 2</string>
+    <string name="text_result">Результат</string>
+    <string name="hint_value">Значение</string>
+</resources>

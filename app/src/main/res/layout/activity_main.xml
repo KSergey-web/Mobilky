@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/text_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_for_num1"
+         android:layout_gravity="center"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/hint_value"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+       />
+
+    <TextView
+        android:id="@+id/text_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_for_num2"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:hint="@string/hint_value"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_result"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        />
+    <Button
+        android:id="@+id/button_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_sum"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:onClick="onClickSum"
+        />
+</LinearLayout>
