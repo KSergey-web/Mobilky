@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -23,5 +24,10 @@ public class MainActivity extends AppCompatActivity {
         TextView res_view = (TextView) findViewById(R.id.result);
         res_view.setText(res_str);
         Toast.makeText(MainActivity.this, res_str ,Toast.LENGTH_SHORT).show();
+    }
+
+    public void onClickCallActivity(View view) {
+        Intent intent = new Intent(this, ActivitywithIntent.class);
+        startActivity(intent);
     }
 }

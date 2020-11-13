@@ -888,6 +888,7 @@ id blocking
 id bottom
 id bounce
 id buttonPanel
+id button_call_activity
 id button_sum
 id cache_measures
 id center
@@ -946,6 +947,7 @@ id ignore
 id ignoreRequest
 id image
 id info
+id input_str
 id invisible
 id italic
 id jumpToEnd
@@ -1102,6 +1104,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_activitywith_intent
 layout activity_main
 layout custom_dialog
 layout notification_action
@@ -1147,7 +1150,9 @@ string app_name
 string hint_value
 string search_menu_title
 string status_bar_notification_info_overflow
+string text_button_open_link
 string text_button_sum
+string text_call_acrivity
 string text_for_num1
 string text_for_num2
 string text_result

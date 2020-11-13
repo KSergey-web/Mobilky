@@ -5,4 +5,6 @@
     <string name="text_for_num2">Число 2</string>
     <string name="text_result">Результат</string>
     <string name="hint_value">Значение</string>
+    <string name="text_call_acrivity">Вызвать активность</string>
+    <string name="text_button_open_link">Открыть ссылку</string>
 </resources>

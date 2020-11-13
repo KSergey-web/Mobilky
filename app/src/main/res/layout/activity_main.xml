@@ -63,4 +63,13 @@
         android:layout_margin="16dp"
         android:onClick="onClickSum"
         />
+    <Button
+        android:id="@+id/button_call_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_call_acrivity"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:onClick="onClickCallActivity"
+        />
 </LinearLayout>

@@ -11,7 +11,7 @@
 9-->D:\MyApplication\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\MyApplication\app\src\main\AndroidManifest.xml:5:5-19:19
+11-->D:\MyApplication\app\src\main\AndroidManifest.xml:5:5-27:19
 12        android:allowBackup="true"
 12-->D:\MyApplication\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,20 +28,41 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->D:\MyApplication\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.myapplication.MainActivity" >
-21-->D:\MyApplication\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->D:\MyApplication\app\src\main\AndroidManifest.xml:12:19-47
+21        <activity android:name="com.example.myapplication.ActivitywithIntent" >
+21-->D:\MyApplication\app\src\main\AndroidManifest.xml:12:9-19:20
+21-->D:\MyApplication\app\src\main\AndroidManifest.xml:12:19-53
 22            <intent-filter>
-22-->D:\MyApplication\app\src\main\AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->D:\MyApplication\app\src\main\AndroidManifest.xml:14:17-69
-23-->D:\MyApplication\app\src\main\AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->D:\MyApplication\app\src\main\AndroidManifest.xml:16:17-77
-25-->D:\MyApplication\app\src\main\AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28    </application>
-29
-30</manifest>
+22-->D:\MyApplication\app\src\main\AndroidManifest.xml:13:13-18:29
+23                <action android:name="android.intent.action.WEB_SEARCH" />
+23-->D:\MyApplication\app\src\main\AndroidManifest.xml:14:17-74
+23-->D:\MyApplication\app\src\main\AndroidManifest.xml:14:25-72
+24                <action android:name="android.intent.action.SEND" />
+24-->D:\MyApplication\app\src\main\AndroidManifest.xml:15:17-68
+24-->D:\MyApplication\app\src\main\AndroidManifest.xml:15:25-66
+25
+26                <category android:name="android.intent.category.DEFAULT" />
+26-->D:\MyApplication\app\src\main\AndroidManifest.xml:16:17-75
+26-->D:\MyApplication\app\src\main\AndroidManifest.xml:16:27-73
+27
+28                <data android:mimeType="text/plain" />
+28-->D:\MyApplication\app\src\main\AndroidManifest.xml:17:17-54
+28-->D:\MyApplication\app\src\main\AndroidManifest.xml:17:23-52
+29            </intent-filter>
+30        </activity>
+31        <activity android:name="com.example.myapplication.MainActivity" >
+31-->D:\MyApplication\app\src\main\AndroidManifest.xml:20:9-26:20
+31-->D:\MyApplication\app\src\main\AndroidManifest.xml:20:19-47
+32            <intent-filter>
+32-->D:\MyApplication\app\src\main\AndroidManifest.xml:21:13-25:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\MyApplication\app\src\main\AndroidManifest.xml:22:17-69
+33-->D:\MyApplication\app\src\main\AndroidManifest.xml:22:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\MyApplication\app\src\main\AndroidManifest.xml:24:17-77
+35-->D:\MyApplication\app\src\main\AndroidManifest.xml:24:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

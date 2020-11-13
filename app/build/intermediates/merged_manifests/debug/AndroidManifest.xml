@@ -18,6 +18,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.myapplication.ActivitywithIntent" >
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.myapplication.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
