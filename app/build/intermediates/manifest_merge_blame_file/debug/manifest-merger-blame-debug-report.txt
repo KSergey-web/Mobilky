@@ -11,7 +11,7 @@
 9-->D:\MyApplication\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\MyApplication\app\src\main\AndroidManifest.xml:5:5-19:19
+11-->D:\MyApplication\app\src\main\AndroidManifest.xml:5:5-33:19
 12        android:allowBackup="true"
 12-->D:\MyApplication\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,20 +28,53 @@
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
 20-->D:\MyApplication\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.myapplication.MainActivity" >
-21-->D:\MyApplication\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->D:\MyApplication\app\src\main\AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->D:\MyApplication\app\src\main\AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->D:\MyApplication\app\src\main\AndroidManifest.xml:14:17-69
-23-->D:\MyApplication\app\src\main\AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->D:\MyApplication\app\src\main\AndroidManifest.xml:16:17-77
-25-->D:\MyApplication\app\src\main\AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28    </application>
-29
-30</manifest>
+21        <activity
+21-->D:\MyApplication\app\src\main\AndroidManifest.xml:12:9-13:67
+22            android:name="com.example.myapplication.ListActivity"
+22-->D:\MyApplication\app\src\main\AndroidManifest.xml:12:19-47
+23            android:parentActivityName="com.example.myapplication.MainActivity" />
+23-->D:\MyApplication\app\src\main\AndroidManifest.xml:13:13-55
+24        <activity
+24-->D:\MyApplication\app\src\main\AndroidManifest.xml:14:9-15:58
+25            android:name="com.example.myapplication.ActivityTimer"
+25-->D:\MyApplication\app\src\main\AndroidManifest.xml:14:19-48
+26            android:parentActivityName="com.example.myapplication.MainActivity" />
+26-->D:\MyApplication\app\src\main\AndroidManifest.xml:15:13-55
+27        <activity
+27-->D:\MyApplication\app\src\main\AndroidManifest.xml:16:9-25:20
+28            android:name="com.example.myapplication.ActivitywithIntent"
+28-->D:\MyApplication\app\src\main\AndroidManifest.xml:16:19-53
+29            android:parentActivityName="com.example.myapplication.MainActivity" >
+29-->D:\MyApplication\app\src\main\AndroidManifest.xml:17:13-55
+30            <intent-filter>
+30-->D:\MyApplication\app\src\main\AndroidManifest.xml:18:13-24:29
+31                <action android:name="android.intent.action.SEND" />
+31-->D:\MyApplication\app\src\main\AndroidManifest.xml:19:17-69
+31-->D:\MyApplication\app\src\main\AndroidManifest.xml:19:25-66
+32
+33                <category android:name="android.intent.category.DEFAULT" />
+33-->D:\MyApplication\app\src\main\AndroidManifest.xml:21:17-76
+33-->D:\MyApplication\app\src\main\AndroidManifest.xml:21:27-73
+34
+35                <data android:mimeType="text/plain" />
+35-->D:\MyApplication\app\src\main\AndroidManifest.xml:23:17-55
+35-->D:\MyApplication\app\src\main\AndroidManifest.xml:23:23-52
+36            </intent-filter>
+37        </activity>
+38        <activity android:name="com.example.myapplication.MainActivity" >
+38-->D:\MyApplication\app\src\main\AndroidManifest.xml:26:9-32:20
+38-->D:\MyApplication\app\src\main\AndroidManifest.xml:26:19-47
+39            <intent-filter>
+39-->D:\MyApplication\app\src\main\AndroidManifest.xml:27:13-31:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->D:\MyApplication\app\src\main\AndroidManifest.xml:28:17-69
+40-->D:\MyApplication\app\src\main\AndroidManifest.xml:28:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->D:\MyApplication\app\src\main\AndroidManifest.xml:30:17-77
+42-->D:\MyApplication\app\src\main\AndroidManifest.xml:30:27-74
+43            </intent-filter>
+44        </activity>
+45    </application>
+46
+47</manifest>

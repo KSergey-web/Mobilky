@@ -18,6 +18,23 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.myapplication.ListActivity"
+            android:parentActivityName="com.example.myapplication.MainActivity" />
+        <activity
+            android:name="com.example.myapplication.ActivityTimer"
+            android:parentActivityName="com.example.myapplication.MainActivity" />
+        <activity
+            android:name="com.example.myapplication.ActivitywithIntent"
+            android:parentActivityName="com.example.myapplication.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.myapplication.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
