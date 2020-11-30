@@ -3,8 +3,10 @@ package com.example.myapplication;
 import android.widget.Toast;
 
 public class Operations {
-    static String sum(String str1, String str2){
-        int n1,n2;
+
+    private static int n1,n2;
+
+    private  static void fromString(String str1, String str2){
         if ( !str1.isEmpty()) {
             n1 = Integer.parseInt(str1);
         }
@@ -13,8 +15,17 @@ public class Operations {
             n2 = Integer.parseInt(str2);
         }
         else n2 = 0;
+    }
+
+    static String sum(String str1, String str2){
+        fromString(str1,str2);
         int result = n1 + n2;
-        String strRes = "Result: " + Integer.toString(result);
-        return strRes;
+        return Integer.toString(result);
+    }
+
+    static String mult(String str1, String str2){
+        fromString(str1,str2);
+        int result = n1 * n2;
+        return Integer.toString(result);
     }
 }

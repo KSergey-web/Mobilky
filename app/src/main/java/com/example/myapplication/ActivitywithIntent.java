@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.SearchManager;
@@ -9,15 +10,17 @@ import android.view.View;
 import android.widget.EditText;
 
 public class ActivitywithIntent extends AppCompatActivity {
-    public static final String EXTRA_TEXT = "message";
+//    public static final String EXTRA_TEXT = "EXTRA_TEXT";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activitywith_intent);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         Intent intent = getIntent();
-        String messageText = intent.getStringExtra(EXTRA_TEXT);
+        String messageText = intent.getStringExtra(intent.EXTRA_TEXT);
         EditText link = (EditText) findViewById(R.id.input_str);
         link.setText(messageText);
     }

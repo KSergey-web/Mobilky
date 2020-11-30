@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="16dp"
+    tools:context=".New_functional_fragment"
     android:orientation="vertical">
+
     <TextView
-        android:id="@+id/text_num1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_for_num1"
-         android:layout_gravity="center"
+        android:layout_gravity="center"
         android:layout_margin="6dp"
         />
 
     <EditText
-        android:id="@+id/num1"
+        android:id="@+id/num1_mult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -25,10 +23,9 @@
         android:hint="@string/hint_value"
         android:layout_gravity="center"
         android:layout_margin="6dp"
-       />
+        />
 
     <TextView
-        android:id="@+id/text_num2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_for_num2"
@@ -37,7 +34,7 @@
         />
 
     <EditText
-        android:id="@+id/num2"
+        android:id="@+id/num2_mult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -47,7 +44,7 @@
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/result_mult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_result"
@@ -56,18 +53,12 @@
         />
 
     <Button
-        android:id="@+id/button_sum"
+        android:id="@+id/button_mult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_button_sum"
+        android:text="@string/text_button_mult"
         android:layout_gravity="center"
         android:layout_margin="6dp"
-        android:onClick="onClickSum"
         />
 
-    <fragment
-        android:name="com.example.myapplication.New_functional_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mult_frag"/>
 </LinearLayout>
